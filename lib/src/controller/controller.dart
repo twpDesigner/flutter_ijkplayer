@@ -229,6 +229,7 @@ class IjkMediaController
   Future<void> seekTo(double target) async {
     await _plugin?.seekTo(target);
     _ijkStatus = IjkStatus.pause;
+    _ijkStatus = IjkStatus.buffering;
     refreshVideoInfo();
   }
 

@@ -10,6 +10,7 @@ enum DataSourceType {
 enum IjkStatus {
   noDatasource,
   preparing,
+  buffering,
   setDatasourceFail,
   prepared,
   pause,
