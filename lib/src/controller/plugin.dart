@@ -110,6 +110,8 @@ class _IjkPlugin {
       if (map == null) {
         return null;
       } else {
+        map["width"] = 1280;
+        map["height"] = 720;
         return map.cast<String, dynamic>();
       }
     } on Exception {

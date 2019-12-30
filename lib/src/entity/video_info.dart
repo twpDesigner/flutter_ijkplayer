@@ -54,8 +54,8 @@ class VideoInfo {
     }
     //1280/720
     this._map = map;
-    this.width = 1280;// map["width"];
-    this.height = 720;//map["height"];
+    this.width = map["width"];
+    this.height = map["height"];
     this.duration = map["duration"];
     this.currentPosition = map["currentPosition"];
     this.isPlaying = map["isPlaying"];
