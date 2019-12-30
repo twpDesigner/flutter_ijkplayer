@@ -228,9 +228,9 @@ class IjkMediaController
   /// [target] unit is second
   Future<void> seekTo(double target) async {
     await _plugin?.seekTo(target);
-    //_ijkStatus = IjkStatus.pause;
+    _ijkStatus = IjkStatus.pause;
     //当进行更新状态变更，改变状态为缓冲状态
-    _ijkStatus = IjkStatus.buffering;
+    //_ijkStatus = IjkStatus.buffering;
     refreshVideoInfo();
   }
 
